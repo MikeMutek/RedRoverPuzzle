@@ -77,8 +77,12 @@ namespace RedRoverCodePuzzle
                     tabs.RemoveAt(0);
                     continue;
                 }
+                else if(!_parenthesisPairs.Values.Contains(thisChar))
+                {
+                    stringBuilder.Append(thisChar);
+                }
 
-                stringBuilder.Append(thisChar);
+                
             }
             stringBuilder.Append('\n');
 
