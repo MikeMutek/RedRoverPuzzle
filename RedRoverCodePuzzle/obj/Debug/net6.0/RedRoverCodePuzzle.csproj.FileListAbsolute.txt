@@ -1,0 +1,15 @@
+D:\WORK\RedRoverCodePuzzle\RedRoverCodePuzzle\bin\Debug\net6.0\RedRoverCodePuzzle.exe
+D:\WORK\RedRoverCodePuzzle\RedRoverCodePuzzle\bin\Debug\net6.0\RedRoverCodePuzzle.deps.json
+D:\WORK\RedRoverCodePuzzle\RedRoverCodePuzzle\bin\Debug\net6.0\RedRoverCodePuzzle.runtimeconfig.json
+D:\WORK\RedRoverCodePuzzle\RedRoverCodePuzzle\bin\Debug\net6.0\RedRoverCodePuzzle.dll
+D:\WORK\RedRoverCodePuzzle\RedRoverCodePuzzle\bin\Debug\net6.0\RedRoverCodePuzzle.pdb
+D:\WORK\RedRoverCodePuzzle\RedRoverCodePuzzle\obj\Debug\net6.0\RedRoverCodePuzzle.csproj.AssemblyReference.cache
+D:\WORK\RedRoverCodePuzzle\RedRoverCodePuzzle\obj\Debug\net6.0\RedRoverCodePuzzle.GeneratedMSBuildEditorConfig.editorconfig
+D:\WORK\RedRoverCodePuzzle\RedRoverCodePuzzle\obj\Debug\net6.0\RedRoverCodePuzzle.AssemblyInfoInputs.cache
+D:\WORK\RedRoverCodePuzzle\RedRoverCodePuzzle\obj\Debug\net6.0\RedRoverCodePuzzle.AssemblyInfo.cs
+D:\WORK\RedRoverCodePuzzle\RedRoverCodePuzzle\obj\Debug\net6.0\RedRoverCodePuzzle.csproj.CoreCompileInputs.cache
+D:\WORK\RedRoverCodePuzzle\RedRoverCodePuzzle\obj\Debug\net6.0\RedRoverCodePuzzle.dll
+D:\WORK\RedRoverCodePuzzle\RedRoverCodePuzzle\obj\Debug\net6.0\refint\RedRoverCodePuzzle.dll
+D:\WORK\RedRoverCodePuzzle\RedRoverCodePuzzle\obj\Debug\net6.0\RedRoverCodePuzzle.pdb
+D:\WORK\RedRoverCodePuzzle\RedRoverCodePuzzle\obj\Debug\net6.0\RedRoverCodePuzzle.genruntimeconfig.cache
+D:\WORK\RedRoverCodePuzzle\RedRoverCodePuzzle\obj\Debug\net6.0\ref\RedRoverCodePuzzle.dll
