@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Diagnostics.Tracing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace RedRoverCodePuzzle
 {
-    internal static class InitialStringHelper
+    internal static class StringHelper
     {
         //(id, name, email, type(id, name, customFields(c1, c2, c3)), externalId)";
 
@@ -100,8 +92,7 @@ namespace RedRoverCodePuzzle
         {
             puzzleString = puzzleString.Replace(" ", "");
 
-            int stepCount = 0;
-            SortedDictionary<string, object> parsedPuzzle = ConvertStringToDictionary(puzzleString, 0, out stepCount);
+            SortedDictionary<string, object> parsedPuzzle = ConvertStringToDictionary(puzzleString, 0, out int stepCount);
 
             WriteDictionaryContents(parsedPuzzle, string.Empty);
 
@@ -119,6 +110,7 @@ namespace RedRoverCodePuzzle
         private static SortedDictionary<string, object> ConvertStringToDictionary(string puzzleString, int startIndex, out int stepsTaken)
         {
             string thisKey = string.Empty;
+            char separater = ',';
 
             SortedDictionary<string, object> subDictionary = new();
 
@@ -137,7 +129,7 @@ namespace RedRoverCodePuzzle
 
                 stepsTaken++;
 
-                if (thisChar == ',')
+                if (thisChar.Equals(separater))
                 {
                     result.Add(thisKey, subDictionary);
                     thisKey = String.Empty;
@@ -148,11 +140,10 @@ namespace RedRoverCodePuzzle
 
                 else if (_parenthesisPairs.ContainsKey(thisChar))
                 {
-                    int outIndex = 0;
-                    subDictionary = ConvertStringToDictionary(puzzleString, i, out outIndex);
+                    subDictionary = ConvertStringToDictionary(puzzleString, i, out int outIndex);
 
-                    stepsTaken = stepsTaken + outIndex;
-                    i = i + outIndex;
+                    stepsTaken += outIndex;
+                    i += outIndex;
 
                     continue;
                 }
@@ -160,8 +151,6 @@ namespace RedRoverCodePuzzle
                 else if (_parenthesisPairs.Values.Contains(thisChar))
                 {
                     result.Add(thisKey, subDictionary);
-                    thisKey = String.Empty;
-                    subDictionary = new SortedDictionary<string, object>();
                     break;
                 }
 
